@@ -15,7 +15,7 @@
   font-family: 'Lato', sans-serif;
 }
 body {
-	background: #fff;
+	background: rgb(248, 248, 248);
 	margin: 0;
 	color: #5a5a5a;
 }
@@ -239,24 +239,24 @@ button.navbar-toggle, .icon-bar {
 
 
 #h {
-	background: url(../img/header.jpg) no-repeat center;
+	background: url(../img/bg/header.jpg) no-repeat center;
 	padding-top: 5px;
 	padding-bottom: 80px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 450px;
+	height: 100%;
 	width: 100%;
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
 }
 
 @media (min-width: 1500px) {
@@ -280,9 +280,11 @@ button.navbar-toggle, .icon-bar {
 #item1 h3:hover, #item2 h3:hover, #item3 h3:hover{ color: #50d6ff; outline: 0; opacity: 1; font-size: 30px; }
 
 #myname {
-	font-size: 80px;
+	color: white;
+	font-size: 90px;
 	text-align: right;
 }
+#myname:hover{outline: 0; opacity: 1; font-size: 95px; }
 
 .top-big-link {
 	text-align: center;
@@ -297,37 +299,38 @@ button.navbar-toggle, .icon-bar {
 	display: inline-block;
 	height: 50px;
 	margin: 0 5px;
+	margin-bottom: 20px;
 	padding: 16px 20px 0 20px;
 	background: #50d6ff;
 	font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    color: #fff;
-    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #fff;
+  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
 }
-.btn-link-1:hover, .btn-link-1:focus, .btn-link-1:active { outline: 0; opacity: 0.6; color: #fff; }
+.btn-link-1:hover, .btn-link-1:focus, .btn-link-1:active { outline: 0; opacity: 0.6; color: black; }
 
 .btn-link-2 {
 	display: inline-block;
 	height: 50px;
 	margin: 0 5px;
+	margin-bottom: 20px;
 	padding: 16px 20px 0 20px;
-	background: #444;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgb(255, 255, 255);
 	font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    color: #fff;
-    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+  font-weight: 300;
+  line-height: 16px;
+  color: black;
+  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
 }
 .btn-link-2:hover, .btn-link-2:focus, 
-.btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
+.btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6;}
 
 /*	################################################################
 	.4 ABOUT ME
 ################################################################# */
 #hh {
-	background: url(../img/header2.jpg) no-repeat center;
+	background: url(../img/bg/header2.png) no-repeat center;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 450px;
@@ -419,8 +422,42 @@ button.navbar-toggle, .icon-bar {
 	background-color:rgba(0,179,254,.9);
 	text-align:center;
 }
+
 /*	################################################################
-	.5 PROJECTS
+	5. SKILLS
+################################################################# */
+
+/*	################################################################
+	6. RESEARCH
+################################################################# */
+#research {
+	background: url(../img/bg/header3.jpg) no-repeat center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
+
+
+
+
+
+
+/*	################################################################
+	7. PROJECTS
 ################################################################# */
 #back {
 	background: url(../img/big-data.jpg) no-repeat center;
@@ -615,7 +652,7 @@ button.navbar-toggle, .icon-bar {
 
 
 /*	################################################################
-	6. ACTIVITIES
+	8. ACTIVITIES
 ################################################################# */
 
 .img_size {
@@ -685,7 +722,7 @@ button.navbar-toggle, .icon-bar {
 
 
 /*	################################################################
-	7. ALBUM
+	9. ALBUM
 ################################################################# */
 
 #sep {
@@ -749,7 +786,7 @@ li.active{
 
 
 /*	################################################################
-	8. CONTACT
+	10. CONTACT
 ################################################################# */
 
 input {
@@ -834,7 +871,7 @@ input {
 
 
 /*	################################################################
-	9. FOOTER
+	11. FOOTER
 ################################################################# */
 
 .divider-wrapper-dark {

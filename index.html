@@ -50,13 +50,13 @@
   <nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
     <div class="container" id="cid">
       <div class="navbar-header">
-        <a href="index.html" class="pull-left">
+        <a href="index.html" class="pull-left" id="calicon">
             <p><img src="img/Berkeley.png" width=75px height=75px alt="" id="logo_1"></p>
         </a>
         <div class="navbar-brand" >
             <a href="index.html">
                 <h2>&nbsp Ting-Wei Wu</h2>
-                <h4>&nbsp UC Berkeley Graduate</h4>
+                <h4 id="graduate">&nbsp UC Berkeley Graduate</h4>
             </a>
         </div>
       </div>
@@ -71,9 +71,11 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a id="scroll-link1" href="#top">Top</a></li>
           <li><a id="scroll-link2" href="#about-me">About me</a></li>
-          <li><a id="scroll-link3" href="#projects">Projects</a></li>
-          <li><a id="scroll-link4" href="#activities">Activities</a></li>
-          <li><a id="scroll-link5" href="#album">Album</a></li>
+          <li><a id="scroll-link3" href="#skills">Skills</a></li>
+          <li><a id="scroll-link4" href="#research">Research</a></li>
+          <li><a id="scroll-link5" href="#projects">Projects</a></li>
+          <li><a id="scroll-link6" href="#activities">Activities</a></li>
+          <li><a id="scroll-link7" href="#album">Album</a></li>
         </ul>
       </div>
     </div>
@@ -83,11 +85,11 @@
   <div id="h">
     <div class="container centered">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 mt wow bounceInDown pull-right right">
-          <h1>
-            THIS IS<br/>
+        <div class="col-md-8 col-md-offset-2 mt wow flipInX pull-right right">
+          <h1><a id="scroll-link1" href="#top">
             <div id="myname"><b>Wayne&nbsp;</b>Wu<br/></div><br/>
-          </h1>
+            &nbsp;
+          </h1></a>
           <h3>
             UC Berkeley BioE MEng <br/><br/>
             National Taiwan University EE MS
@@ -95,27 +97,12 @@
         </div>
       </div>
       <!--/row-->
-
-      <div class="row mt">
-        <div class="col-sm-4 wow tada" id="item1">
-          <i class="ion-ios7-monitor-outline"></i>
-          <h3>Medical Electronics</h3>
-        </div>
-        <!--/col-md-4-->
-
-        <div class="col-sm-4 wow tada" id="item2">
-          <i class="ion-ios7-cloud-outline"></i>
-          <h3>Machine Learning</h3>
-        </div>
-        <!--/col-md-4-->
-
-        <div class="col-sm-4 wow tada" id="item3">
-          <i class="ion-ios7-heart-outline"></i>
-          <h3>Healthcare</h3>
-        </div>
-        <!--/col-md-4-->
+      <div class="mt">
+          <a href="#about-me" class="about-link">
+          <img src="https://media.giphy.com/media/8wbpmeim0LmdW/giphy.gif" width=100px height=100px>
+        </a>
       </div>
-      <!--/row-->
+
     </div>
     <!--/container-->
   </div>
@@ -124,14 +111,9 @@
   <!------------ About me --------------->
   <div class="container ptb" id="about-me">
     <div class="row">
-      <h2 class="centered mb wow jellyInDown">I am interested in medical electronic device innovation<br/>
-        & machine learning applications in healthcare.</h2>
-      <h4 class="centered">Check it!</h4>
-      
-      <div class="top-big-link wow swing">
-        <a class="btn btn-link-1" href="https://drive.google.com/file/d/1zLpCt2nEQueI3r-WCtaaOjkXkejTENJC/view?usp=sharing">My CV</a>
-        <a class="btn btn-link-2" href="https://github.com/waynewu6250">Github</a>
-      </div>
+      <h2 class="centered wow jellyInDown">I am interested in medical electronic device innovation<br/>
+        & machine learning applications in healthcare.
+      </h2>
     </div>
     <!--/row-->
   </div>
@@ -139,6 +121,122 @@
   
   <div id="hh">
     <div class="container">
+      
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 wow zoomIn mb">
+          <h1 class="centered" style="font-size: 60px;"><b>About Me</b></h1>
+        </div>
+      </div>
+      <!--/row -->
+
+      <div class="top-big-link wow swing">
+        <a class="btn btn-link-1" href="https://drive.google.com/file/d/1zLpCt2nEQueI3r-WCtaaOjkXkejTENJC/view?usp=sharing"><b>CV</b></a>
+        <a class="btn btn-link-2" href="https://github.com/waynewu6250"><b>Github</b></a>
+      </div>
+
+      <div class="row centered">
+        <div class="col-sm-4 features-box wow fadeInUp">
+            <a href="#research" class="research-link">
+              <div class="features-box-icon">
+                <i class="ion-ios7-pulse"></i>
+              </div>
+            </a>
+            <h3>Research</h3>
+            <p2>My main research in National Taiwan University and UC Berkeley lie 
+              in BioMEMS applications in single cell analysis and cell-based data analysis.
+            </p2>
+        </div>
+        <!--/col-md-4-->
+        <div class="col-sm-4 features-box wow fadeInDown">
+            <a href="#projects" class="project-link">  
+              <div class="features-box-icon">
+                <i class="ion-ios7-cloud-upload"></i>
+              </div>
+            </a>
+            <h3>Projects</h3>
+            <p2>My project experiences are associated with mainly deep learning 
+              applications in various fields such as medical diagnosis, chatbot or text generation.
+              I was also involved in some hardware system design projects while at intern or at school.
+            </p2>
+        </div>
+        <!--/col-md-4-->
+        <div class="col-sm-4 features-box wow fadeInUp">
+            <a href="#activities" class="life-link">  
+              <div class="features-box-icon">
+                <i class="ion-ios7-basketball"></i>
+              </div>
+            </a>
+            <h3>Life</h3>
+            <p2>I enjoy playing sports especially basketball and badminton, guitar and drums outside academics. 
+              Several leadership and extracurricular activity experiences in volunteering.
+            </p2>
+        </div>
+        <!--/col-md-4-->
+      </div>
+      <!--/row-->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--/.G-->
+
+  <!------------ Skills --------------->
+  <div class="container mtb centered" id="skills">
+  · <div class="row">
+      <div class="col-md-10 col-md-offset-1 wow zoomIn">
+        <h1 class="centered" style="font-size: 60px;"><b>SKILLS</b></h1>
+      </div>
+    </div>
+    <!--/row-->
+    <div class="row mts">
+        <div class="col-sm-4 wow tada" id="item1">
+          <img src="img/icons/cloud.png" height=60px alt="">
+          <h3>Machine Learning</h3>
+          <h4>Deep Learning</h4>
+          <h4>Natural Language Processing</h4>
+          <h4>Data Science</h4>
+        </div>
+        <!--/col-md-4-->
+
+        <div class="col-sm-4 wow tada" id="item2">
+            <img src="img/icons/paper_plane.png" height=60px alt="">
+          <h3>Language & Tools</h3>
+          <h4>Python, C++</h4>
+          <h4>Pytorch, Tensorflow, Keras</h4>
+          <h4>Pyspark, Sklearn, docker</h4>
+
+        </div>
+        <!--/col-md-4-->
+
+        <div class="col-sm-4 wow tada" id="item3">
+            <img src="img/icons/heart.png" height=60px alt="">
+          <h3>Medical Electronics</h3>
+          <h4>MATLAB</h4>
+          <h4>Verilog, SPICE</h4>
+          <h4>AutoCAD, 3dsMax</h4>
+
+        </div>
+        <!--/col-md-4-->
+      </div>
+      <!--/row-->
+  </div>
+  <!-- /.container -->
+
+
+  <!------------ Research --------------->
+  <div id="research">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 wow zoomIn mb">
+          <h1 class="centered" style="font-size: 60px;"><b>Research</b></h1>
+        </div>
+      </div>
+      <!--/row -->
+
+      <div class="top-big-link wow swing">
+        <a class="btn btn-link-1" href=""><b>Publications</b></a>
+      </div>
+
       <div class="row centered">
         <div class="col-sm-4 features-box wow fadeInUp">
             <a href="#projects" class="project-link">
@@ -179,13 +277,6 @@
         <!--/col-md-4-->
       </div>
       <!--/row-->
-      <h4>&nbsp;</h4>
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1 wow zoomIn">
-          <img src="img/items.jpg" class="img-responsive center-block round-corner" alt="">
-        </div>
-      </div>
-      <!--/row-->
     </div>
     <!-- /.container -->
   </div>
@@ -196,10 +287,9 @@
   <div id="padding">
     <div class="container" id="projects">
       <div class="row centered mb wow jellyInDown">
-        <h2>Check some of my latest works.</h2>
+        <h2>Check some of my latest projects.</h2>
         <div class="col-md-8 col-md-offset-2">
-          <p>Please feel free to click on the following icons to see more what I did in the past.<br/>
-             Both research and project perspective.<br/></p>
+          <p>Please feel free to click on the following icons to see more what I did in the past.</p>
         </div>
         <!--/col-md-8-->
       </div>
