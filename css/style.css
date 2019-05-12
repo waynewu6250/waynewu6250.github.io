@@ -672,25 +672,43 @@ button.navbar-toggle, .icon-bar {
 }
 
 #activity-bg {
-	background: url(../img/bg/header4.jpg) no-repeat center;
+	background: url(../img/bg/header5.jpg) no-repeat center;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	/* background-attachment: relative;
-	background-position: center center;
-	height: 100%;
-	max-height: 450px;
+}
+
+.imgBox .portfolio-hover-act {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
+	transition: 0.5s;
+	height: 100%;
+}
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+.imgBox:hover .portfolio-hover-act {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #061d2770;
+	transition: 0.5s;
+	z-index: 1;
+}
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white; */
+.imgBox .portfolio-hover-act .far {
+	position: absolute;
+	font-size: 0px;
+}
+
+.imgBox:hover .portfolio-hover-act .far {
+	position: relative;
+	margin-top: 20%;
+	text-align: center;
+	font-size: 20px;
+	transition: 0.5s;
+	color: #fff;
 }
 
 
