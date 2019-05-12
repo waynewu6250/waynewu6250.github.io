@@ -655,11 +655,6 @@ button.navbar-toggle, .icon-bar {
 	8. ACTIVITIES
 ################################################################# */
 
-.img_size {
-	width: 600px;
-	height: 265px;
-}
-
 .swiper-container {
 	width: 100%;
 	padding-top: 50px;
@@ -677,12 +672,13 @@ button.navbar-toggle, .icon-bar {
 }
 
 #activity-bg {
-	background: url(../img/golden-state.jpg) no-repeat center;
+	background: url(../img/bg/header4.jpg) no-repeat center;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-attachment: relative;
+	/* background-attachment: relative;
 	background-position: center center;
-	min-height: 450px;
+	height: 100%;
+	max-height: 450px;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -694,7 +690,7 @@ button.navbar-toggle, .icon-bar {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: white;
+    color: white; */
 }
 
 
@@ -954,12 +950,12 @@ ul.social-buttons li a.linkedin:hover {
 	color: #fff;	
 }
 
-ul.social-buttons li a.phone {
+ul.social-buttons li a.github {
 	border: 2px solid #db4437;
 	color: #db4437;
 }
 
-ul.social-buttons li a.phone:hover {
+ul.social-buttons li a.github:hover {
 	border: 2px solid #db4437;
 	background-color: #db4437;
 	color: #fff;	
