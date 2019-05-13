@@ -106,36 +106,78 @@ $('.portfolio-menu ul li').click(function(){
 //       $("span").text(wdth);
 //   });
 // });
-function get_new_swiper(slide, between){
-  swiper = new Swiper('.swiper-container', {
-    slidesPerView: slide,
-    spaceBetween: between,
-    autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
-    },
-    navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-}
 
 $(document).ready(function(){
-  if($(window).width() >= 900){
-    get_new_swiper(3,5);
+  if($(window).width() >= 700){
+    swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 5,
+      autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+      },
+      navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
   }else{
-    get_new_swiper(1,0);
+    swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+      },
+      navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
   }
   $(window).resize(function() {
-    if($(window).width() >= 900){
-      get_new_swiper(3,5);
+    if($(window).width() >= 700){
+      swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 5,
+        autoplay: {
+            delay: 7500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
     }else{
-      get_new_swiper(1,0);
+      swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 7500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
     }
   });
 
