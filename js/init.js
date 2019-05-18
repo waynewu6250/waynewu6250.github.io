@@ -107,13 +107,13 @@ $('.portfolio-menu ul li').click(function(){
 //   });
 // });
 
-$(document).ready(function(){
+$(document).ready(function() {
   if($(window).width() >= 700){
     swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       spaceBetween: 5,
       autoplay: {
-          delay: 7500,
+          delay: 4500,
           disableOnInteraction: false,
       },
       navigation: {
@@ -128,9 +128,9 @@ $(document).ready(function(){
   }else{
     swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 5,
       autoplay: {
-          delay: 7500,
+          delay: 4500,
           disableOnInteraction: false,
       },
       navigation: {
@@ -143,13 +143,15 @@ $(document).ready(function(){
       },
     });
   }
-  $(window).resize(function() {
+
+  $(window).resize(function(){
+    swiper.destroy(true,true);
     if($(window).width() >= 700){
       swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 5,
         autoplay: {
-            delay: 7500,
+            delay: 4500,
             disableOnInteraction: false,
         },
         navigation: {
@@ -164,9 +166,9 @@ $(document).ready(function(){
     }else{
       swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 5,
         autoplay: {
-            delay: 7500,
+            delay: 4500,
             disableOnInteraction: false,
         },
         navigation: {
@@ -179,28 +181,9 @@ $(document).ready(function(){
         },
       });
     }
+    
+
   });
 
+
 });
-
-
-// if ($(window).width() <= 900){
-    
-//     swiper = new Swiper('.swiper-container', {
-//         slidesPerView: 1,
-//         spaceBetween: 5,
-//         autoplay: {
-//             delay: 7500,
-//             disableOnInteraction: false,
-//         },
-//         navigation: {
-//               nextEl: '.swiper-button-next',
-//               prevEl: '.swiper-button-prev',
-//         },
-//         pagination: {
-//           el: '.swiper-pagination',
-//           clickable: true,
-//         },
-//       });
-    
-// }

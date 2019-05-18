@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Basic - Bootstrap Personal Template</title>
+  <title>BioMEMS</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -38,7 +38,15 @@
 
   <div id="h2">
     <div class="logo">
-      <a href="index.html"><h2>BASIC</h2></a>
+      <a href="index.html" class="pull-left" id="calicon">
+        <p><img src="img/Berkeley.png" width=75px height=75px alt="" id="logo_1"></p>
+      </a>
+      <div class="navbar-brand" >
+          <a href="index.html">
+              <h2>&nbsp Ting-Wei Wu</h2>
+              <h4 id="graduate">&nbsp UC Berkeley Graduate</h4>
+          </a>
+      </div>
     </div>
     <!--/logo-->
     <div class="container centered">
@@ -150,7 +158,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h2 class="centered">Contact Form</h2>
+          <h1 class="centered"><strong>Contact</strong> Me</h1>
+          <p>&nbsp;</p>
           <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
 
             <div class="form-group">
@@ -187,23 +196,32 @@
   </div>
   <!-- / contact -->
 
-  <div id="copyrights">
-    <div class="container">
-      <p>
-        &copy; Copyrights <strong>Basic</strong>. All Rights Reserved
-      </p>
-      <div class="credits">
-        <!--
-          You are NOT allowed to delete the credit link to TemplateMag with free version.
-          You can delete the credit link only if you bought the pro version.
-          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/basic-bootstrap-personal-template/
-          Licensing information: https://templatemag.com/license/
-        -->
-        Created with Basic template by <a href="https://templatemag.com/">TemplateMag</a>
+  <footer class="divider-wrapper-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <span class="copyright wow fadeInUp">&copy; 2019 <strong>Ting-Wei Wu</strong>. All Rights Reserved</span>
+              </div>
+              <div class="col-md-4 text-center">
+                  <a href="#" id="back-to-top"><i class="ion-ios7-arrow-up"></i></a>
+              </div>
+              <div class="col-md-4">
+                  <ul class="list-inline social-buttons wow fadeInUp">
+                      <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100009608057727"><i class="ion-social-facebook"></i></a>  
+                      </li>
+                      <li><a class="github" href="https://github.com/waynewu6250"><i class="ion-social-github"></i></a>
+                      </li>
+                      <li><a class="linkedin" href="https://www.linkedin.com/in/ting-wei-wu/"><i class="ion-social-linkedin"></i></a>
+                      </li>
+                      <li><a class="twitter" href="https://twitter.com/waynewu6250?lang=zh-tw"><i class="ion-social-twitter"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
-    </div>
-  </div>
-  <!-- / copyrights -->
+  </footer>
+  <!-- / footer -->
+
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -214,8 +232,18 @@
   <script src="lib/hover/hoverdir.js"></script>
   <script src="lib/hover/hoverex.min.js"></script>
 
+  <!-- Javascript -->
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/retina-1.1.0.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script src="js/wow.min.js"></script>
+  <script src="js/wow.js"></script>
+
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/init.js"></script>
 
 </body>
 </html>

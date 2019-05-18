@@ -703,10 +703,10 @@ button.navbar-toggle, .icon-bar {
 }
 
 /***** Large devices only *****/
-@media (min-width: 1200px)	{
+@media (min-width: 1000px){
 	.imgBox:hover .portfolio-hover-act .far {
 		position: relative;
-		margin-top: 30%;
+		margin-top: 20%;
 		margin-left: 10%;
 		margin-right: 10%;
 		font-size: 20px;
@@ -717,21 +717,7 @@ button.navbar-toggle, .icon-bar {
 }
 
 /***** Medium devices only *****/
-@media (min-width: 992px)	and (max-width: 1199px){
-	.imgBox:hover .portfolio-hover-act .far {
-		position: relative;
-		margin-top: 20%;
-		margin-left: 5%;
-		margin-right: 5%;
-		font-size: 15px;
-		transition: 0.5s;
-		color: #fff;
-	}
-	
-}
-
-/***** Small devices only *****/
-@media (min-width: 701px)	and (max-width: 900px){
+@media (min-width: 700px)	and (max-width: 999px){
 	.imgBox:hover .portfolio-hover-act .far {
 		position: relative;
 		margin-top: 20%;
@@ -744,18 +730,22 @@ button.navbar-toggle, .icon-bar {
 	
 }
 
+/***** Small devices only *****/
+@media (min-width: 701px)	and (max-width: 900px){
+	
+}
+
 /***** Extra Small devices only *****/
-@media (max-width: 700px){
+@media (max-width: 699px){
 	.imgBox:hover .portfolio-hover-act .far {
 		position: relative;
-		margin-top: 30%;
-		margin-left: 10%;
-		margin-right: 10%;
+		margin-top: 20%;
+		margin-left: 15%;
+		margin-right: 15%;
 		font-size: 20px;
 		transition: 0.5s;
 		color: #fff;
 	}
-
 	
 }
 
@@ -1054,7 +1044,7 @@ img::-moz-selection {
 
 /* HEADER 2 - PORTFOLIO SECTION */
 #h2 {
-	background: url(../img/header-2.jpg) no-repeat center top;
+	background: url(../img/bg/header.jpg) no-repeat center top;
 	padding-top: 5px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1074,7 +1064,7 @@ img::-moz-selection {
 }
 
 #h2 .logo {
-	margin-top: 30px;
+	margin-top: 10px;
 	margin-left: 40px;
 	padding-bottom: 150px;
 }
