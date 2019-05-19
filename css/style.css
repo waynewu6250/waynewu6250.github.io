@@ -1043,41 +1043,38 @@ img::-moz-selection {
 
 
 /* HEADER 2 - PORTFOLIO SECTION */
-#h2 {
-	background: url(../img/bg/header.jpg) no-repeat center top;
-	padding-top: 5px;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 700px;
-	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+.single-post-header {
+	margin-top: 150px;
+	text-align: center;
 }
 
-#h2 .logo {
-	margin-top: 10px;
-	margin-left: 40px;
-	padding-bottom: 150px;
-}
-
-#h2 .logo h2{
-	font-weight: 900;
+.textdivider h1 {
+	padding-top: 25px;
 	color: white;
-	letter-spacing: 1px;
+	font-size: 40px;
 }
 
-#h2 h3 {
-	margin-top: 30px;
-	letter-spacing: 1px;
+.textdivider p {
+	color: white;
+	font-size: 25px;
+}
+
+.section {
+	padding-bottom: 60px;
+}
+
+/* POST */
+#content-wrapper {
+	max-width: 1270px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+#project-background{
+	max-width: 1270px;
+	padding: 70px;
+	background: #1F1F1F;
+	
 }
 
 
