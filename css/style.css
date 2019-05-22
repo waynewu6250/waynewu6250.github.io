@@ -1073,7 +1073,8 @@ img::-moz-selection {
 #project-background{
 	max-width: 1270px;
 	padding: 70px;
-	background: #1F1F1F;
+	background: url(../img/bg/header6.jpg) center center fixed no-repeat;
+	background-size: cover;
 	
 }
 
