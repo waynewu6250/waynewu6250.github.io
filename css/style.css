@@ -306,7 +306,7 @@ button.navbar-toggle,
 
 
 #h {
-    background: url(../img/bg/header.jpg) no-repeat center;
+    background: url(../img/bg/header.jpg) no-repeat center fixed;
     padding-top: 40px;
     padding-bottom: 80px;
     background-attachment: relative;
@@ -426,7 +426,7 @@ button.navbar-toggle,
 	.4 ABOUT ME
 ################################################################# */
 #hh {
-    background: url(../img/bg/header2.png) no-repeat center;
+    background: url(../img/bg/header2.png) no-repeat center fixed;
     background-attachment: relative;
     background-position: center center;
     min-height: 450px;
@@ -542,7 +542,7 @@ button.navbar-toggle,
 	6. RESEARCH
 ################################################################# */
 #research {
-    background: url(../img/bg/header3.jpg) no-repeat center;
+    background: url(../img/bg/header3.jpg) no-repeat center fixed;
     background-attachment: relative;
     background-position: center center;
     min-height: 450px;
@@ -571,7 +571,7 @@ button.navbar-toggle,
 	7. PROJECTS
 ################################################################# */
 #back {
-    background: url(../img/bg/header4.jpg) no-repeat center;
+    background: url(../img/bg/header4.jpg) no-repeat center fixed;
     padding-top: 50px;
     background-attachment: relative;
     background-position: center center;
@@ -784,7 +784,7 @@ button.navbar-toggle,
 }
 
 #activity-bg {
-    background: url(../img/bg/header5.jpg) no-repeat center;
+    background: url(../img/bg/header5.jpg) no-repeat center fixed;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -866,7 +866,7 @@ button.navbar-toggle,
 ################################################################# */
 
 #sep {
-    background: url(../img/taiwan.jpg) no-repeat center top;
+    background: url(../img/taiwan.jpg) no-repeat center top fixed;
     padding-top: 100px;
     background-attachment: relative;
     background-position: center center;
