@@ -206,30 +206,13 @@
         <h1 class="centered mtb">
           <b>Results</b>
         </h1>
-        <div class="col-md-4 centered">
-          <figure>
-            <img class="img-responsive"  src="img/minor/r3-8.jpg" alt="Figure 3">
-            <figcaption style="margin-top: 95px">Figure 3. Experimental Setup.</figcaption>
-          </figure>
-        </div>
-
-    
-        <div class="col-md-4 centered">
-          <figure>
-            <img class="img-responsive" src="img/minor/r3-9.jpg" alt="Figure 4">
-            <figcaption class="mt2">Figure 4. Multiple signal measurement.</figcaption>
-          </figure>
-        </div>
-
-
-
-
-      </div>
-
-
-      <div class="row">
+        <p style="font-size: 16px;" class="mb col-md-10 col-md-offset-1 centered" style="margin: auto;">
+          Here we present our results including differentiation tasks, frequency-depenpent anlaysis including stray capacitance effect and electrode spatial design.
+          The following table is some preparation and experimental parameters setup.
+        </p>
+        <img class="img-responsive" style="margin:auto" width=600px src="img/minor/r3-10.jpg" alt="">
         <div class="col-md-10 col-md-offset-1 centered mb">
-          <div class="row">
+          <div class="row mt">
             <div class="col-sm-4">
               <h2><b>6</b></h2>
               <h6>Types of particles</h6>
@@ -250,9 +233,121 @@
         </div>
         <!--/col-md-10-->
       </div>
+      <!-- /row -->
+
+      <div class="row">
+        <h2 class="centered mtb">
+          <b>1. Position &amp; Size Differentiation</b>
+        </h2>
+        <p style="font-size: 16px;" class="mt centered mb">
+          For the first task, we successfully differentiate 3 sizes of polystyrene beads with different positions inside
+          the channel.
+          By analyzing the abrupt increase of impedance resulting significant drop of voltage, we could use lock-in
+          amplifier to demultiply the signal responses with reference signals.
+          Then we use matlab to perform signal processing and obtain the frequency response at 1MHz applied signal.
+          From the obvious clusters shown in figure with different beads' positions and sizes, this set of sensing
+          electrode is capable of tell the unknown bead size and unknown position simultaneously.
+        </p>
+
+        <div class="col-md-6 centered">
+          <figure>
+            <img class="img-responsive" style="margin:auto;" src="img/minor/r3-8.jpg" alt="Figure 3">
+            <figcaption style="margin-top: 95px">Figure 3. Experimental Setup.</figcaption>
+          </figure>
+        </div>
+
+
+        <div class="col-md-6 centered">
+          <figure>
+            <img class="img-responsive" style="display:block; margin:auto;" src="img/minor/r3-9.jpg" alt="Figure 4">
+            <figcaption class="mt2">Figure 4. Multiple signal measurement.</figcaption>
+          </figure>
+        </div>
+
+      </div>
       <!--/row-->
 
-      <div class="top-big-link wow swing">
+      <div class="row">
+        <h2 class="centered mtb">
+          <b>2. Frequency Simulation</b>
+        </h2>
+        <p style="font-size: 16px;" class="mt centered mb">
+          Since we have demonstrated the device's capability of differentiating particles' size and position in
+          standardized 1MHz signal excitation, frequency variation shall be next particularly discussed with its
+          influence on signal response as overall impedance varies, and further application of differentiating disparate
+          types of particles. In order to characterize the parasitic behavior and determine the optimal regime for
+          device operation, a proposed model is established to simulate the channel environment so to calculate the
+          impedance variation and correspondent signal response.
+        </p>
+        <div class="col-md-6 centered">
+          <figure>
+            <img class="img-responsive" style="margin:auto;" width=500px src="img/minor/r3-11.png" alt="Figure 3">
+            <figcaption style="margin-top: 20px">Figure 5. Circuit Spectrum</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6" style="padding-bottom: 15px">
+          <p style="font-size: 16px;">
+            As simulated in model, a frequency pattern is theoretically characterized:
+          </p>
+          <p style="font-size: 16px;">
+            (1) At frequencies below 100 kHz, the impedance is mostly dominated by the capacitance of the insulator
+            layer
+            (electrical double layer sandwiched between the electrode and buffer solution).
+          </p>
+          <p style="font-size: 16px;">
+            (2) At frequencies between 100 kHz and 1 MHz, the impedance is dominated by the bulk solution resistance
+            across the electrolyte. This regime is optimal for measuring the impedance of cells or beads passing across
+            the channel.
+          </p>
+          <p style="font-size: 16px;">
+            (3) At frequencies above 1 MHz, again we see a drop in impedance with frequency. This region is dominated by
+            parasitic or device intrinsic capacitance. Such capacitance and resistance domains are determined by the
+            buffer conductivity[1].
+          </p>
+        </div>
+        <p style="font-size: 16px;" class="mt centered mb">
+            Then, 20um electrodes on glass substrate are both experimented with different KCL solution circumstances and
+            no beads penetration. Impedance pattern would be indicated as we have done impedance analyzing in Agilent
+            4294A precision impedance analyzer in Figure. 6 and corresponds to baseline of signal response. Next, real
+            experiments of impedance change when 6um bead penetration in Figure. 7 are used to verify the frequency
+            spectrum in Figure. 6. An optimal frequency range is found and set with Figure. 6 and Figure. 7. which we
+            could correspond back to the proposed model.
+            
+        </p>
+        
+        <div class="col-md-6 centered">
+          <figure>
+            <img class="img-responsive" style="margin:auto;" src="img/minor/r3-12.png" alt="Figure 3">
+            <figcaption class="mt2">Figure 6. Frequency Spectrum test under Agilent 4294A.</figcaption>
+          </figure>
+        </div>
+
+
+        <div class="col-md-6 centered">
+          <figure>
+            <img class="img-responsive" style="display:block; margin:auto;" src="img/minor/r3-13.png" alt="Figure 4">
+            <figcaption class="mt2">Figure 7. Real Experiments of measured voltage change.</figcaption>
+          </figure>
+        </div>
+
+        
+
+
+      </div>
+      <!--/row-->
+      <p style="font-size: 16px;" class="mt centered mb">
+          As we could see in the figure 1., Around 1MHz to 10MHz, there is a flat region where channel resistance dominates the whole measured impedance, indicating the relative obvious signal change as we can detect when bead penetrates on the sensing electrode pairs. In figure 2, due to device characteristics, there are two signal curves representing 6 um and 10 um bead responses. Non ideal capacitive effects clearly create a limited frequency range for operational frequency. These ranges (1-10 MHz for 6 um  bead and 1-15 MHz for 10 um bead) define our frequency usage to successfully differentiate bead properties. To go in depth, when the frequency goes high, the response gets higher as double layer impedance takes up less effect. But after 8 MHz (6 um) and 12 MHz (10 um), parasitic effect starts to devastate the detection of response as an issue we would like to deal with in next session. 
+          
+      </p>
+      <p style="font-size: 10px;" class="mt2">
+          [1] Reference by Sam Emaminejad, Kee-Hyun Paik, Vincent Tabard-Cossa, Mehdi Javanmar, stanford, CA " Portable
+          cytometry using microscale electronic sensing" Sensors and Actuators B: Chemical, 2 September 2015
+
+      </p>
+      
+
+
+      <div class="top-big-link wow swing mtb">
         <a class="btn btn-link-1" href="index.html"><b>Main Page</b></a>
       </div>
 
