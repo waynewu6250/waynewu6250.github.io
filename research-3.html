@@ -94,8 +94,27 @@
   <div id="content-wrapper">
     <div class="container ptb">
       <div class="row mb">
-        <h1 class="centered mb2">Microfluidic Particle-Analyzing Device</h1>
-        <h4 class="centered mb">National Taiwan University CMOS biotechnology lab</h4>
+        <h1 class="centered mb2">
+          <l style="font-size: 100px;"><b>M</b></l>
+          icrofluidic Particle-Analyzing Device
+        </h1>
+        <h4 class="centered">National Taiwan University CMOS biotechnology lab</h4>
+      </div>
+      <!-- /row -->
+      <div class="row centered mb">
+          <div class="row centered page-menu">
+              <ul>
+                <li class="round-corner"><a href="#experiment">Experiment Setup</a></li>
+                <li class="round-corner"><a href="#results">Results</a></li>
+                <li class="round-corner"><a href="#differentiation">Differentiation</a></li>
+                <li class="round-corner"><a href="#frequency">Frequency Simulation</a></li>
+                <li class="round-corner"><a href="#capacitance">Capacitance Effect</a></li>
+              </ul>
+            </div>
+      </div>
+      <!--/row-->
+
+      <div class="row">
         <p class="centered mb">My principal work at National Taiwan University following with Dr. Chih-Ting Lin,
           is dealing with the microfluidics novel device based on impedance sensing method to detect cell or particle
           charateristics.
@@ -147,7 +166,7 @@
       </div>
       <!--/row-->
       <hr>
-      <div class="row">
+      <div class="row" id="experiment">
         <h1 class="centered mb">
           <b>Experiment Setup</b>
         </h1>
@@ -201,13 +220,14 @@
     <!-- /.container -->
 
     <div class="container">
-      <div class="row">
+      <div class="row" id="results">
         <hr>
         <h1 class="centered mtb">
           <b>Results</b>
         </h1>
         <p style="font-size: 16px;" class="mb col-md-10 col-md-offset-1 centered" style="margin: auto;">
-          Here we present our results including differentiation tasks, frequency-depenpent anlaysis including stray capacitance effect and electrode spatial design.
+          Here we present our results including differentiation tasks, frequency-depenpent anlaysis including stray
+          capacitance effect and electrode spatial design.
           The following table is some preparation and experimental parameters setup.
         </p>
         <img class="img-responsive" style="margin:auto" width=600px src="img/minor/r3-10.jpg" alt="">
@@ -235,7 +255,7 @@
       </div>
       <!-- /row -->
 
-      <div class="row">
+      <div class="row" id="differentiation">
         <h2 class="centered mtb">
           <b>1. Position &amp; Size Differentiation</b>
         </h2>
@@ -267,7 +287,7 @@
       </div>
       <!--/row-->
 
-      <div class="row">
+      <div class="row" id="frequency">
         <h2 class="centered mtb">
           <b>2. Frequency Simulation</b>
         </h2>
@@ -306,15 +326,15 @@
           </p>
         </div>
         <p style="font-size: 16px;" class="mt centered mb">
-            Then, 20um electrodes on glass substrate are both experimented with different KCL solution circumstances and
-            no beads penetration. Impedance pattern would be indicated as we have done impedance analyzing in Agilent
-            4294A precision impedance analyzer in Figure. 6 and corresponds to baseline of signal response. Next, real
-            experiments of impedance change when 6um bead penetration in Figure. 7 are used to verify the frequency
-            spectrum in Figure. 6. An optimal frequency range is found and set with Figure. 6 and Figure. 7. which we
-            could correspond back to the proposed model.
-            
+          Then, 20um electrodes on glass substrate are both experimented with different KCL solution circumstances and
+          no beads penetration. Impedance pattern would be indicated as we have done impedance analyzing in Agilent
+          4294A precision impedance analyzer in Figure. 6 and corresponds to baseline of signal response. Next, real
+          experiments of impedance change when 6um bead penetration in Figure. 7 are used to verify the frequency
+          spectrum in Figure. 6. An optimal frequency range is found and set with Figure. 6 and Figure. 7. which we
+          could correspond back to the proposed model.
+
         </p>
-        
+
         <div class="col-md-6 centered">
           <figure>
             <img class="img-responsive" style="margin:auto;" src="img/minor/r3-12.png" alt="Figure 3">
@@ -330,21 +350,29 @@
           </figure>
         </div>
 
-        
+
 
 
       </div>
       <!--/row-->
       <p style="font-size: 16px;" class="mt centered mb">
-          As we could see in the figure 1., Around 1MHz to 10MHz, there is a flat region where channel resistance dominates the whole measured impedance, indicating the relative obvious signal change as we can detect when bead penetrates on the sensing electrode pairs. In figure 2, due to device characteristics, there are two signal curves representing 6 um and 10 um bead responses. Non ideal capacitive effects clearly create a limited frequency range for operational frequency. These ranges (1-10 MHz for 6 um  bead and 1-15 MHz for 10 um bead) define our frequency usage to successfully differentiate bead properties. To go in depth, when the frequency goes high, the response gets higher as double layer impedance takes up less effect. But after 8 MHz (6 um) and 12 MHz (10 um), parasitic effect starts to devastate the detection of response as an issue we would like to deal with in next session. 
-          
-      </p>
-      <p style="font-size: 10px;" class="mt2">
-          [1] Reference by Sam Emaminejad, Kee-Hyun Paik, Vincent Tabard-Cossa, Mehdi Javanmar, stanford, CA " Portable
-          cytometry using microscale electronic sensing" Sensors and Actuators B: Chemical, 2 September 2015
+        As we could see in the figure 1., Around 1MHz to 10MHz, there is a flat region where channel resistance
+        dominates the whole measured impedance, indicating the relative obvious signal change as we can detect when bead
+        penetrates on the sensing electrode pairs. In figure 2, due to device characteristics, there are two signal
+        curves representing 6 um and 10 um bead responses. Non ideal capacitive effects clearly create a limited
+        frequency range for operational frequency. These ranges (1-10 MHz for 6 um bead and 1-15 MHz for 10 um bead)
+        define our frequency usage to successfully differentiate bead properties. To go in depth, when the frequency
+        goes high, the response gets higher as double layer impedance takes up less effect. But after 8 MHz (6 um) and
+        12 MHz (10 um), parasitic effect starts to devastate the detection of response as an issue we would like to deal
+        with in next session.
 
       </p>
-      
+      <p style="font-size: 10px;" class="mt2">
+        [1] Reference by Sam Emaminejad, Kee-Hyun Paik, Vincent Tabard-Cossa, Mehdi Javanmar, stanford, CA " Portable
+        cytometry using microscale electronic sensing" Sensors and Actuators B: Chemical, 2 September 2015
+
+      </p>
+
 
 
       <div class="top-big-link wow swing mtb">

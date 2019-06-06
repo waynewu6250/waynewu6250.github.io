@@ -1193,6 +1193,43 @@ img::-moz-selection {
 
 }
 
+/* Button */
+.page-menu {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.page-menu ul li{
+    display: inline-block;
+    margin-left: 10px;
+    list-style: none;
+    padding: 10px 15px;
+    border: 1px solid #22A7F0;
+    background: #22A7F0;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.page-menu ul li a{
+    color: #fff;
+}
+.page-menu ul li a:hover{
+    color: #22A7F0;
+}
+
+.page-menu ul li:hover {
+    border: 1px solid #22A7F0;
+    background: #fff;
+    color:  #22A7F0;
+}
+
+
+
 
 /* Contact Form */
 
