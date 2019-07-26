@@ -102,15 +102,15 @@
       </div>
       <!-- /row -->
       <div class="row centered mb">
-          <div class="row centered page-menu">
-              <ul>
-                <li class="round-corner"><a href="#experiment">Experiment Setup</a></li>
-                <li class="round-corner"><a href="#results">Results</a></li>
-                <li class="round-corner"><a href="#differentiation">Differentiation</a></li>
-                <li class="round-corner"><a href="#frequency">Frequency Simulation</a></li>
-                <li class="round-corner"><a href="#capacitance">Capacitance Effect</a></li>
-              </ul>
-            </div>
+        <div class="row centered page-menu">
+          <ul>
+            <li class="round-corner"><a href="#experiment">Experiment Setup</a></li>
+            <li class="round-corner"><a href="#results">Results</a></li>
+            <li class="round-corner"><a href="#differentiation">Differentiation</a></li>
+            <li class="round-corner"><a href="#frequency">Frequency Simulation</a></li>
+            <li class="round-corner"><a href="#capacitance">Capacitance Effect</a></li>
+          </ul>
+        </div>
       </div>
       <!--/row-->
 
@@ -165,63 +165,66 @@
         <!--/col-md-4-->
       </div>
       <!--/row-->
-      <hr>
-      <div class="row" id="experiment">
-        <h1 class="centered mb">
-          <b>Experiment Setup</b>
-        </h1>
-        <img src="img/research/research3.png" class="img-responsive aligncenter" width=500px>
-
-        <p style="font-size: 16px;" class="mt centered mb">
-          &nbsp; The experiment setup is shown in Figure 1. Lock in amplifier (Zurich instrument, HF2LI) is used to
-          supply the
-          voltage and measure the electric signal. Then, the data was transported to the personal computer. MATLAB was
-          utilized to read out the data and plot the data. The beads movement is also observed by the CCD camera.
-          <br><br>
-          &nbsp; For signal response sensing, an AC voltage of 1 volt and 1M Hz is applied on the electrode which is
-          labeled as
-          “A” as Figure 2 shows. (The choice considerations are talked in the sub-section, Method and Experiment
-          Parameter.) Then, electrical signals are measured from electrode labeled as “B” and “C” simultaneously when
-          beads flow through the sensing area. Signal measured from electrode “B” is call the “Neighbor Signal”, while
-          signal from electrode “C” is called the “Across Signal” in this thesis. By measuring this two kinds of
-          signals, the information of bead position (flow path) and size can be derived.
-          <br><br>
-          &nbsp; As showed in Figure 2, there are three kinds of flow path discussed in this thesis, namely, close path,
-          center
-          path and far path. In order to control the flow path of beads, the KCL solution with beads inside is injected
-          into the microfluidics channel from inlet 1, inlet 2, inlet 3, respectively. When the solution is injected
-          from inlet 1, the flow path of beads will be close to electrode “C” and “D”, namely the far path because of
-          the inertia of moving objects. Similarly, the beads injected from inlet 3 will flow through the close path in
-          Figure 21. If we want the beads flow along the center path, just inject the solution from inlet 2. Hence,
-          injected from different inlet, beads will flow on either paths.
-        </p>
-      </div>
-      <!-- row -->
-      <div>
-        <div class="col-md-6 centered">
-          <figure>
-            <img class="img-responsive" height=600px width=480px src="img/minor/r3-4.png" alt="Figure 1">
-            <figcaption>Figure 1. Experimental Setup.</figcaption>
-          </figure>
-
-        </div>
-        <div class="col-md-6 centered">
-          <figure>
-            <img class="img-responsive" height=600px width=800px src="img/minor/r3-5.png" alt="Figure 2">
-            <figcaption>Figure 2. Multiple signal measurement.</figcaption>
-          </figure>
-
-        </div>
-
-      </div>
-      <!-- row -->
-
     </div>
     <!-- /.container -->
+    <div id="ntu-background" style="color: white;">
+      <div class="container">
+
+        <div class="row" id="experiment">
+          <h1 class="centered mb">
+            <b>Experiment Setup</b>
+          </h1>
+          <img src="img/research/research3.png" class="img-responsive aligncenter" width=500px>
+
+          <p style="font-size: 16px; color: white;" class="mt centered mb">
+            &nbsp; The experiment setup is shown in Figure 1. Lock in amplifier (Zurich instrument, HF2LI) is used to
+            supply the
+            voltage and measure the electric signal. Then, the data was transported to the personal computer. MATLAB was
+            utilized to read out the data and plot the data. The beads movement is also observed by the CCD camera.
+            <br><br>
+            &nbsp; For signal response sensing, an AC voltage of 1 volt and 1M Hz is applied on the electrode which is
+            labeled as
+            “A” as Figure 2 shows. (The choice considerations are talked in the sub-section, Method and Experiment
+            Parameter.) Then, electrical signals are measured from electrode labeled as “B” and “C” simultaneously when
+            beads flow through the sensing area. Signal measured from electrode “B” is call the “Neighbor Signal”, while
+            signal from electrode “C” is called the “Across Signal” in this thesis. By measuring this two kinds of
+            signals, the information of bead position (flow path) and size can be derived.
+            <br><br>
+            &nbsp; As showed in Figure 2, there are three kinds of flow path discussed in this thesis, namely, close
+            path,
+            center
+            path and far path. In order to control the flow path of beads, the KCL solution with beads inside is
+            injected
+            into the microfluidics channel from inlet 1, inlet 2, inlet 3, respectively. When the solution is injected
+            from inlet 1, the flow path of beads will be close to electrode “C” and “D”, namely the far path because of
+            the inertia of moving objects. Similarly, the beads injected from inlet 3 will flow through the close path
+            in
+            Figure 21. If we want the beads flow along the center path, just inject the solution from inlet 2. Hence,
+            injected from different inlet, beads will flow on either paths.
+          </p>
+        </div>
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-6 centered">
+            <figure>
+              <img class="img-responsive" height=600px width=480px src="img/minor/r3-4.png" alt="Figure 1">
+              <figcaption>Figure 1. Experimental Setup.</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 centered">
+            <figure>
+              <img class="img-responsive" height=600px width=800px src="img/minor/r3-5.png" alt="Figure 2">
+              <figcaption>Figure 2. Multiple signal measurement.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- /.container -->
+    </div>
 
     <div class="container">
       <div class="row" id="results">
-        <hr>
         <h1 class="centered mtb">
           <b>Results</b>
         </h1>

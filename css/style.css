@@ -1193,6 +1193,20 @@ img::-moz-selection {
 
 }
 
+#ntu-background {
+    max-width: 1270px;
+    padding: 70px;
+    background: url(../img/bg/ntu.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
+#ntu-background2 {
+    max-width: 1270px;
+    padding: 70px;
+    background: url(../img/bg/ntu.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
 /* Button */
 .page-menu {
     text-align: center;
